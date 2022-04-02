@@ -1,15 +1,10 @@
-*{
-
-    
-    padding: 0px;  
-
-}
 
 body {
 background-color: #F8FFE4;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     
 
 }
@@ -20,8 +15,6 @@ background-color: #F8FFE4;
     flex-direction: column;
     align-items: center;
 }
-
-
 
 h1, h2 {
 
@@ -37,19 +30,36 @@ h2{
 
 .original-container, .copy-container{
     font-family: 'Open Sans', sans-serif;
-    /* font-family: 'IBM Plex Serif', serif;*/
     align-items: center;
+    padding:0.5px;
+    
     
 
 }
+
+.original-container{
+    background-color: #e4ffef;
+}
+
+
 div > p{
     
     font-family: 'IBM Plex Serif', serif;
     text-align: center;
+    padding:1px;
 }
 
+button {
+    
+    
+    margin-bottom: 1cm;
+    font-family: 'Open Sans', sans-serif;
+    
+}
 .copy-container{
-    padding:10px
+    
+    background-color: #ffeee4;
+    padding:1px;
 }
 
 

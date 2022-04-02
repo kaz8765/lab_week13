@@ -1,26 +1,34 @@
 "use strict";
-//create copy
 
 
+// --------------------------------------------------
 
-const selectItem = document.querySelector('.original-container')
-const makeDuplicate = document.querySelector('.copy-container')
+// A. Click Creates
 
-function copydiv(evt){
-    selectItem.addEventListener("click", (evt) => {
-    
-    makeDuplicate.insertAdjacentHTML("afterbegin", evt.target.innerHTML+'   ')
-    
-})
+
+const selectItem = document.querySelector(`.original-container`)
+const makeDuplicate = document.querySelector(`.copy-container`)
+
+function copydiv(evt) {
+    selectItem.addEventListener(`click`, evt => {
+        console.log(evt)
+
+        makeDuplicate.insertAdjacentHTML(`afterbegin`, evt.target.innerHTML + '   ')
+
+    })
 }
-copydiv() //makeDuplicate
+copydiv()
+// makeDuplicate inside parenthesis works as well
 
-//delete all copy 
+// --------------------------------------------------
 
-function flushAllItems(evt){
-    const clear_copies = document.querySelector("button");
-    clear_copies.addEventListener("click", (evt) => {
-    makeDuplicate.innerHTML = null;
+// B. Clear Destroys
+
+function flushAllItems(evt) {
+    const clear_copies = document.querySelector(`button`);
+    clear_copies.addEventListener(`click`, (evt) => {
+        console.log(evt)
+        makeDuplicate.innerHTML = null;
     })
 }
 flushAllItems(makeDuplicate)
