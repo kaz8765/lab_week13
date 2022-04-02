@@ -3,13 +3,13 @@
 
 
 
-const selectItem = document.querySelector('.originals')
+const selectItem = document.querySelector('.original-container')
 const makeDuplicate = document.querySelector('.copy-container')
 
 function copydiv(evt){
     selectItem.addEventListener("click", (evt) => {
     
-    makeDuplicate.insertAdjacentHTML("afterbegin", evt.target.innerHTML)
+    makeDuplicate.insertAdjacentHTML("afterbegin", evt.target.innerHTML+'   ')
     
 })
 }
@@ -20,7 +20,7 @@ copydiv() //makeDuplicate
 function flushAllItems(evt){
     const clear_copies = document.querySelector("button");
     clear_copies.addEventListener("click", (evt) => {
-    makeDuplicate.innerHTML = "";
+    makeDuplicate.innerHTML = null;
     })
 }
 flushAllItems(makeDuplicate)
