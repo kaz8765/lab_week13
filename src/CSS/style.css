@@ -1,8 +1,21 @@
 body {
-background-color: #EEEEF5
+background-color: #F8FFE4
 
 }
-title{
+h1, h2 {
+
     
     font-family: 'Open Sans', sans-serif;
 }
+
+h2{
+    text-decoration: overline;
+    text-decoration: underline;
+}
+
+.original-container .copy-container{
+    font-family: 'IBM Plex Serif', serif;
+
+}
+
+
